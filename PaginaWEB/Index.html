@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lading Page</title>
+    <link rel="stylesheet" href="../PaginaWEB/style.css">
+
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SITIO</div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#services">servicios</a></li>
+                <li><a href="#contact">contacto</a></li>
+                
+            </ul>
+
+        </nav>
+
+    </header>
+    <!--Landingpage or Section-->
+
+    <section class="landing">
+        <img src="colombia.jpg" alt="imagen"> 
+        <h1>Bienvenidos a Nuestra Web</h1>
+        <p>Explora aqui nuestros servicios y algo mas</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda similique laborum excepturi unde quas, autem quos, repellendus a officiis reiciendis sed praesentium error. Laudantium quis recusandae ut et hic tempora!</p>
+    </section>
+<!--footer-->
+    <footer>
+        <p>&copy;2024 mi sitio. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function toggleMenu(){
+            const navLinks = document.getElementById('navLinks');
+
+            if (navLinks){
+                navLinks.classList.toggle('active');
+            }else{
+                console.error('no se encontro id navLinks');
+            }
+
+            // navLinks=classList.toggle('active')
+
+
+        }
+    </script>
+</body>
+</html>
